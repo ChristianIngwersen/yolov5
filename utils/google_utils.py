@@ -18,9 +18,11 @@ def attempt_download(weights):
              'yolov5s.pt': '1R5T6rIyy3lLwgFXNms8whc-387H0tMQO',  # yolov5s.yaml
              'yolov5m.pt': '1vobuEExpWQVpXExsJ2w-Mbf3HJjWkQJr',  # yolov5m.yaml
              'yolov5l.pt': '1hrlqD1Wdei7UT4OgT785BEk1JwnSvNEV',  # yolov5l.yaml
-             'yolov5x.pt': '1mM8aZJlWTxOg7BZJvNUMrTnA2AbeCVzS',  # yolov5x.yaml
+             #'yolov5x.pt': '1mM8aZJlWTxOg7BZJvNUMrTnA2AbeCVzS',  # yolov5x.yaml
+             'yolov5x.pt': '1ABd5Y5_ZLW-IxfkJl1iy8U_tzJ0xDttH',  # yolov5x.yaml
              }
 
+        # https://drive.google.com/file/d/1ABd5Y5_ZLW-IxfkJl1iy8U_tzJ0xDttH/view?usp=sharing
         file = Path(weights).name
         if file in d:
             r = gdrive_download(id=d[file], name=weights)
